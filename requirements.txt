@@ -1,0 +1,4 @@
+Jinja2==2.8
+signxml==0.6.0
+soap2py==1.16
+voluptuous==0.8.11
