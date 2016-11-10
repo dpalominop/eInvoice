@@ -30,9 +30,35 @@ class Client(object):
             print(ex)
             return None
 
-    def send_bill(self, filename, content_file):
+    def sendBill(self, filename, content_file):
         params = {
             'fileName': filename,
             'contentFile': content_file
         }
         return self._call_service('sendBill', params)
+
+    def sendSummary(self, filename, content_file):
+        params = {
+            'fileName': filename,
+            'contentFile': content_file
+        }
+        return self._call_service('sendSummary', params)
+
+    def sendPack(self, filename, content_file):
+        params = {
+            'fileName': filename,
+            'contentFile': content_file
+        }
+        return self._call_service('sendPack', params)
+    
+    def getStatus(self, ticket):
+        params = {
+            'ticket': ticket
+        }
+        return self._call_service('getStatus', params)
+
+    def getStatusCdr(self, rucComprobante):
+        params = {
+            'rucComprobante': rucComprobante
+        }
+        return self._call_service('getStatusCdr', params)

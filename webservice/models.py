@@ -83,7 +83,7 @@ class Document(object):
 
     def send(self):
         encoded_content = base64.b64encode(self.in_memory_data.getvalue())
-        self._response = self._client.send_bill(self._zip_filename, encoded_content)
+        self._response = self._client.sendBill(self._zip_filename, encoded_content)
 
     def process_response(self):
         # save in disk response content
