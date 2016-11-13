@@ -148,3 +148,17 @@ class Invoice(Document):
             serial=self._data['serial'],
             correlative=self._data['correlative']
         )
+
+"""
+Ejemplo:
+inv = models.Invoice("10461482916",
+    {'voucher_type': "01",
+    'serial':"F001",
+    'correlative':125, 
+    'issue_date':'', 
+    'currency':'', 
+    'lines':[''],
+    'supplier':{'ruc':'10461482916', 'registration_name':''},
+    'customer':{'ruc':'10461482917'}}, 
+    '')
+"""
