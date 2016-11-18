@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<Invoice
+xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+xmlns:ccts="urn:un:unece:uncefact:documentation:2"
+xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2"
+xmlns:sac="urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1"
+xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ext:UBLExtensions>
+    <ext:UBLExtension>
+        <ext:ExtensionContent>
+            <sac:AdditionalInformation>
+                <sac:AdditionalMonetaryTotal>
+                    <cbc:ID>1001</cbc:ID>
+                    <cbc:PayableAmount currencyID="PEN">1407.29</cbc:PayableAmount>
+                </sac:AdditionalMonetaryTotal>
+                <sac:AdditionalMonetaryTotal>
+                    <cbc:ID>1004</cbc:ID>
+                    <cbc:PayableAmount currencyID="PEN">48.00</cbc:PayableAmount>
+                </sac:AdditionalMonetaryTotal>
+                <sac:AdditionalMonetaryTotal>
+                    <cbc:ID>2005</cbc:ID>
+                    <cbc:PayableAmount currencyID="PEN">74.07</cbc:PayableAmount>
+                </sac:AdditionalMonetaryTotal>
+                <sac:AdditionalProperty>
+                    <cbc:ID>1000</cbc:ID>
+                    <cbc:Value>SON MIL SEISCIENTOS SESENTA Y 60/100</cbc:Value>
+                </sac:AdditionalProperty>
+            </sac:AdditionalInformation>
+        </ext:ExtensionContent>
+    </ext:UBLExtension>
+    <ext:UBLExtension>
+        <ext:ExtensionContent>
+        <ds:Signature Id="signatureKG">
+            <ds:SignedInfo>
+                <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+                <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+                <ds:Reference URI="">
+                    <ds:Transforms>
+                        <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#envelopedsignature"/>
+                    </ds:Transforms>
+                    <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                    <ds:DigestValue>ld6X+TvM42Fe+F1KM/OBjiKpnko=</ds:DigestValue>
+                </ds:Reference>
+            </ds:SignedInfo>
+            <ds:SignatureValue>W6DbMHJEFmU7GuiU0O+HRUqVzQZZW3QndYtUyeL0VxXuTafHu2vBC+OXvnnali43VXRGQ+/E0tPlZAssqI/PEPfzIU79Wufq6saxYGHKvzdnBi6hnaMuCSG5THHNFppx4aT1KNg7p/koBB3U8PT9C6m6UnkJJNUquHkFc9BCqI8=</ds:SignatureValue>
+                <ds:KeyInfo>
+                    <ds:X509Data>
+                    <ds:X509SubjectName>1.2.840.113549.1.9.1=#161a4253554c434140534f55544845524e504552552e434f4d2e5045,CN=CarlosVega,OU=10200545523,O=Vega Poblete Carlos Enrique,L=CHICLAYO,ST=LAMBAYEQUE,C=PE</ds:X509SubjectName>
+                    <ds:X509Certificate>MIIESTCCAzGgAwIBAgIKWOCRzgAAAAAAIjANBgkqhkiG9w0BAQUFADAnMRUwEwYKCZImiZPyLGQBGRYFU1VOQVQxDjAMBgNVBAMTBVNVTkFUMB4XDTEwMTIyODE5NTExMFoXDTExMTIyODIwMDExMFowgZUxCzAJBgNVBAYTAlBFMQ0wCwYDVQQIEwRMSU1BMQ0wCwYDVQQHEwRMSU1BMREwDwYDVQQKEwhTT1VUSEVSTjEUMBIGA1UECxMLMjAxMDAxNDc1MTQxFDASBgNVBAMTC0JvcmlzIFN1bGNhMSkwJwYJKoZIhvcNAQkBFhpCU1VMQ0FAU09VVEhFUk5QRVJVLkNPTS5QRTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAtRtcpfBLzyajuEmYt4mVH8EE02KQiETsdKStUThVYM7g3Lkx5zq3SH5nLH00EKGCtota6RRV40sgIbnhNfs1SOQcAohNwRfWhho7sKNZFR971rFxj4cTKMEvpt8Dr98UYFkJhph6WnsniGM2tJDq9KJ52UXrlScMfBityx0AsCAwEAAaOCAYowggGGMA4GA1UdDwEB/wQEAwIE8DBEBgkqhkiG9w0BCQ8ENzA1MA4GCCqGSIb3DQMCAgIAgDAOBggqhkiG9w0DBAICAIAwBwYFKw4DAgcwCgYIKoZIhvcNAwcwHQYDVR0OBBYEFG/m6twbiRNzRINavjqU0j/sZECMBMGA1UdJQQMMAoGCCsGAQUFBwMCMB8GA1UdIwQYMBaAFN9kHQDqWONmozw3xdNSIMFW2t7MFkGA1UdHwRSMFAwTqBMoEqGImh0dHA6Ly9wY2IyMjYvQ2VydEVucm9sbC9TVU5BVC5jcmyGJGZpbGU6Ly9cXHBjYjIyNlxDZXJ0RW5yb2xsXFNVTkFULmNybDBBggrBgEFBQcBAQRyMHAwNQYIKwYBBQUHMAKGKWh0dHA6Ly9wY2IyMjYvQ2VydEVucm9sbC9wY2IyMjZfU1VOQVQuY3J0MDcGCCsGAQUFBzAChitmaWxlOi8vXFxwY2IyMjZcQ2VydEVucm9sbFxwY2IyMjZfU1VOQVQuY3J0MA0GCSqGSIb3DQEBBQUAA4IBAQBI6wJ/QmRpz3C3rorBflOvA9DOa3GNiiB7rtPIjF4mPmtgfo2pK9gvnxmV2pST3ovfu0nbG2kpjzzaaelRjEodHvkcM3abGsOE53wfxqQF5uf/jkzZA9hbLHtE1aLKBD0Mhzc6cvI072alnE6QU3RZ16ie9CYsHmMrs+sPHMy8DJU5YrdnqHdSn2D3nhKBi4QfT/WURPOuo6DF4iWgrCyMf3eJgmGKSUN3At5fK4HSpfyURT0kboaJKNBgQwy0HhGh5BLM7DsTi/KwfdUYkoFgrY71Pm23+ra+xTow1Vk9gj5NqrlpMY5gAVQXEIo1++GxDtaK/5EiVKSqzJ6geIfz</ds:X509Certificate>
+                    </ds:X509Data>
+                </ds:KeyInfo>
+            </ds:Signature>
+        </ext:ExtensionContent>
+    </ext:UBLExtension>
+</ext:UBLExtensions>
+<cbc:UBLVersionID>2.0</cbc:UBLVersionID>
+<cbc:CustomizationID>1.0</cbc:CustomizationID>
+<cbc:ID>BC01-3652</cbc:ID>
+<cbc:IssueDate>2012-06-24</cbc:IssueDate>
+<cbc:InvoiceTypeCode>03</cbc:InvoiceTypeCode>
+<cbc:DocumentCurrencyCode>PEN</cbc:DocumentCurrencyCode>
+<cac:Signature>
+    <cbc:ID>IDSignKG</cbc:ID>
+    <cac:SignatoryParty>
+    <cac:PartyIdentification>
+    <cbc:ID>10200545523</cbc:ID>
+    </cac:PartyIdentification>
+    <cac:PartyName>
+    <cbc:Name>VEGA POBLETE CARLOS ENRIQUE</cbc:Name>
+    </cac:PartyName>
+    </cac:SignatoryParty>
+    <cac:DigitalSignatureAttachment>
+    <cac:ExternalReference>
+    <cbc:URI>#SignatureKG</cbc:URI>
+    </cac:ExternalReference>
+    </cac:DigitalSignatureAttachment>
+</cac:Signature>
+<cac:AccountingSupplierParty>
+    <cbc:CustomerAssignedAccountID>10200545523</cbc:CustomerAssignedAccountID>
+    <cbc:AdditionalAccountID>6</cbc:AdditionalAccountID>
+    <cac:Party>
+        <cac:PartyName>
+            <cbc:Name>ELECTRODOMESTICOS CRUZ DE MOTUPE</cbc:Name>
+        </cac:PartyName>
+        <cac:PostalAddress>
+            <cbc:ID>140106</cbc:ID>
+            <cbc:StreetName>AV. LOS TALLANES #235</cbc:StreetName>
+            <cbc:CitySubdivisionName>URB. MIGUEL GRAU</cbc:CitySubdivisionName>
+            <cbc:CityName>CHICLAYO</cbc:CityName>
+            <cbc:CountrySubentity>LAMBAYEQUE</cbc:CountrySubentity>
+            <cbc:District>LA VICTORIA</cbc:District>
+            <cac:Country>
+                <cbc:IdentificationCode>PE</cbc:IdentificationCode>
+            </cac:Country>
+        </cac:PostalAddress>
+        <cac:PartyLegalEntity>
+            <cbc:RegistrationName>VEGA POBLETE CARLOS ENRIQUE</cbc:RegistrationName>
+        </cac:PartyLegalEntity>
+    </cac:Party>
+</cac:AccountingSupplierParty>
+<cac:AccountingCustomerParty>
+    <cbc:CustomerAssignedAccountID>00078647</cbc:CustomerAssignedAccountID>
+    <cbc:AdditionalAccountID>1</cbc:AdditionalAccountID>
+    <cac:Party>
+        <cac:PartyLegalEntity>
+            <cbc:RegistrationName>SOLEDAD ASUNCION CARRASCO PEREZ</cbc:RegistrationName>
+        </cac:PartyLegalEntity>
+    </cac:Party>
+</cac:AccountingCustomerParty>
+<cac:TaxTotal>
+    <cbc:TaxAmount currencyID="PEN">253.31</cbc:TaxAmount>
+    <cac:TaxSubtotal>
+        <cbc:TaxAmount currencyID="PEN">253.31</cbc:TaxAmount>
+        <cac:TaxCategory>
+            <cac:TaxScheme>
+                <cbc:ID>1000</cbc:ID>
+                <cbc:Name>IGV</cbc:Name>
+                <cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
+            </cac:TaxScheme>
+        </cac:TaxCategory>
+    </cac:TaxSubtotal>
+</cac:TaxTotal>
+<cac:LegalMonetaryTotal>
+    <cbc:PayableAmount currencyID="PEN">1660.60</cbc:PayableAmount>
+</cac:LegalMonetaryTotal>
+<cac:InvoiceLine>
+    <cbc:ID>1</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="NIU">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="PEN">845.76</cbc:LineExtensionAmount>
+    <cac:PricingReference>
+        <cac:AlternativeConditionPrice>
+            <cbc:PriceAmount currencyID="PEN">998.00</cbc:PriceAmount>
+            <cbc:PriceTypeCode>01</cbc:PriceTypeCode>
+        </cac:AlternativeConditionPrice>
+    </cac:PricingReference>
+    <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="PEN">152.24</cbc:TaxAmount>
+        <cac:TaxSubtotal>
+            <cbc:TaxAmount currencyID="PEN">152.24</cbc:TaxAmount>
+            <cac:TaxCategory>
+                <cbc:TaxExemptionReasonCode>10</cbc:TaxExemptionReasonCode>
+                <cac:TaxScheme>
+                    <cbc:ID>1000</cbc:ID>
+                    <cbc:Name>IGV</cbc:Name>
+                    <cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
+                </cac:TaxScheme>
+            </cac:TaxCategory>
+        </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+        <cbc:Description>Refrigeradora marca "AXM" no frost de 200 ltrs</cbc:Description>
+        <cac:SellersItemIdentification>
+            <cbc:ID>REF564</cbc:ID>
+        </cac:SellersItemIdentification>
+    </cac:Item>
+    <cac:Price>
+        <cbc:PriceAmount currencyID="PEN">845.76</cbc:PriceAmount>
+    </cac:Price>
+</cac:InvoiceLine>
+<cac:InvoiceLine>
+    <cbc:ID>2</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="NIU">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="PEN">635.59</cbc:LineExtensionAmount>
+    <cac:PricingReference>
+        <cac:AlternativeConditionPrice>
+            <cbc:PriceAmount currencyID="PEN">750.00</cbc:PriceAmount>
+            <cbc:PriceTypeCode>01</cbc:PriceTypeCode>
+        </cac:AlternativeConditionPrice>
+    </cac:PricingReference>
+    <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="PEN">114.41</cbc:TaxAmount>
+        <cac:TaxSubtotal>
+            <cbc:TaxAmount currencyID="PEN">114.41</cbc:TaxAmount>
+            <cac:TaxCategory>
+                <cbc:TaxExemptionReasonCode>10</cbc:TaxExemptionReasonCode>
+                <cac:TaxScheme>
+                    <cbc:ID>1000</cbc:ID>
+                    <cbc:Name>IGV</cbc:Name>
+                    <cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
+                </cac:TaxScheme>
+            </cac:TaxCategory>
+        </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+        <cbc:Description>Cocina a gas GLP, marca "AXM" de 5 hornillas</cbc:Description>
+        <cac:SellersItemIdentification>
+            <cbc:ID>COC124</cbc:ID>
+        </cac:SellersItemIdentification>
+    </cac:Item>
+    <cac:Price>
+        <cbc:PriceAmount currencyID="PEN">635.59</cbc:PriceAmount>
+    </cac:Price>
+</cac:InvoiceLine>
+<cac:InvoiceLine>
+    <cbc:ID>3</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="NIU">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="PEN">0.00</cbc:LineExtensionAmount>
+    <cac:PricingReference>
+        <cac:AlternativeConditionPrice>
+            <cbc:PriceAmount currencyID="PEN">0.00</cbc:PriceAmount>
+            <cbc:PriceTypeCode>01</cbc:PriceTypeCode>
+        </cac:AlternativeConditionPrice>
+        <cac:AlternativeConditionPrice>
+            <cbc:PriceAmount currencyID="PEN">4.80</cbc:PriceAmount>
+            <cbc:PriceTypeCode>02</cbc:PriceTypeCode>
+        </cac:AlternativeConditionPrice>
+    </cac:PricingReference>
+    <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="PEN">0.00</cbc:TaxAmount>
+        <cac:TaxSubtotal>
+            <cbc:TaxAmount currencyID="PEN">0.00</cbc:TaxAmount>
+            <cac:TaxCategory>
+                <cbc:TaxExemptionReasonCode>31</cbc:TaxExemptionReasonCode>
+                <cac:TaxScheme>
+                    <cbc:ID>1000</cbc:ID>
+                    <cbc:Name>IGV</cbc:Name>
+                    <cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
+                </cac:TaxScheme>
+            </cac:TaxCategory>
+        </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+        <cbc:Description>Sixpack de gaseosa "Guaraná" de 400 ml.</cbc:Description>
+        <cac:SellersItemIdentification>
+            <cbc:ID>NOB012</cbc:ID>
+        </cac:SellersItemIdentification>
+    </cac:Item>
+    <cac:Price>
+        <cbc:PriceAmount currencyID="PEN">0.00</cbc:PriceAmount>
+    </cac:Price>
+</cac:InvoiceLine>
+</Invoice>

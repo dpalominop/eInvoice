@@ -51,7 +51,9 @@ class Document(object):
 
     def render(self):
         template = env.get_template(self.template_name)
+        print "***template: **", template
         self._xml = template.render(**self._data)
+        print "***_xml***", self._xml
 
     def sign(self):
         # TODO: change hardcodeed key paths to environement variables
