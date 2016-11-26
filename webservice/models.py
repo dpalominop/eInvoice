@@ -51,9 +51,8 @@ class Document(object):
 
     def render(self):
         template = env.get_template(self.template_name)
-        print "***template: **", template
         self._xml = template.render(**self._data)
-        print "***_xml***", self._xml
+        ### print "***_xml***", self._xml
 
     def sign(self):
         # TODO: change hardcodeed key paths to environement variables
@@ -153,14 +152,44 @@ class Invoice(Document):
 
 """
 Ejemplo:
-inv = models.Invoice("10461482916",
-    {'voucher_type': "01",
-    'serial':"F001",
-    'correlative':125, 
-    'issue_date':'', 
-    'currency':'', 
-    'lines':[''],
-    'supplier':{'ruc':'10461482916', 'registration_name':''},
-    'customer':{'ruc':'10461482917'}}, 
-    '')
+from client import Client
+from models import Invoice
+from datetime import datetime
+
+cl = Client('20222222223MODDATOS','MODDATOS', True)
+
+data = {
+            'issue_date': datetime.today().strftime('%Y-%m-%d'),
+            'supplier': {
+                'ruc': '12345678909',
+                'registration_name': 'Supplier',
+                'commercial_name': 'commercial name',
+                'address': {
+                    'ubigeo': '111111',
+                    'street': 'Av something',
+                    'district': 'LIMA',
+                    'city': 'LIMA',
+                    'country_code': 'PE'
+                }
+            },
+            'customer': {
+                'ruc': '12345678909',
+                'registration_name': 'Customer'
+            },
+            'voucher_type': '01',
+            'serial': 'F001',
+            'correlative': '123',
+            'currency': 'PEN',
+            'lines': [
+                {
+                    'description': 'super awesome product',
+                    'price': 20.50,
+                    'unit_code': 'CS'
+                }
+            ]
+        }
+
+doc = Invoice('20222222223', data, Client('20222222223MODDATOS','MODDATOS', True))
+doc.process()
+
 """

@@ -30,7 +30,7 @@ class InvoiceTestCase(unittest.TestCase):
                 'registration_name': 'Customer'
             },
             'voucher_type': '01',
-            'serial': '123',
+            'serial': 'F001',
             'correlative': '123',
             'currency': 'PEN',
             'lines': [
